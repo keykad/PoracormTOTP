@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">My Authenticator</string>
+    <string name="scan_qr">Сканировать QR-код</string>
+</resources>

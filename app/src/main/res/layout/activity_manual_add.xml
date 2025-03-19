@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/et_issuer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Сервис (например, Google)"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Имя пользователя"
+        android:layout_marginTop="8dp"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/et_secret"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Секретный ключ (Base32)"
+        android:layout_marginTop="8dp"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сохранить"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
