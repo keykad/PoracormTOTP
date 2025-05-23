@@ -12,7 +12,6 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.example.authenticator.data.Account
 import com.example.authenticator.data.AppDatabase
-import com.google.zxing.ResultPoint
 import com.journeyapps.barcodescanner.BarcodeCallback
 import com.journeyapps.barcodescanner.BarcodeResult
 import com.journeyapps.barcodescanner.DecoratedBarcodeView
@@ -31,12 +30,7 @@ class QrScannerActivity : AppCompatActivity() {
             handleScannedUri(result.text)
             finish()
         }
-
-        override fun possibleResultPoints(resultPoints: List<ResultPoint>) {
-            // Опционально: обработка промежуточных результатов
-        }
     }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_qr_scanner)

@@ -10,7 +10,7 @@
         android:id="@+id/et_issuer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Сервис (например, Google)"
+        android:hint="Сервис "
         android:inputType="text"/>
 
     <EditText

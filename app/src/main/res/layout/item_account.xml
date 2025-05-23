@@ -1,5 +1,6 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
@@ -7,15 +8,27 @@
 
     <TextView
         android:id="@+id/tv_issuer"
-        android:layout_width="match_parent"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
-        android:textSize="18sp"/>
-
+        android:textSize="18sp" />
     <TextView
         android:id="@+id/tv_code"
-        android:layout_width="match_parent"
+        android:layout_width="319dp"
         android:layout_height="wrap_content"
         android:textSize="24sp"
-        android:textStyle="bold"/>
-
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Удалить"
+        android:layout_gravity="end" />
+    <ProgressBar
+        android:id="@+id/progress_time"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:max="30"
+        android:progress="30"
+        android:progressTint="@color/purple_700" />
 </LinearLayout>
